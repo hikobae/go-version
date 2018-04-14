@@ -87,18 +87,3 @@ func isAllZero(nums []int) bool {
 	}
 	return true
 }
-
-// Equals returns true if v == o
-func (v *Version) Equals(o *Version) bool {
-	return v.Cmp(o) == 0
-}
-
-// LessThan true if v < o
-func (v *Version) LessThan(o *Version) bool {
-	return v.Cmp(o) < 0
-}
-
-// GreaterThan true if v > o
-func (v *Version) GreaterThan(o *Version) bool {
-	return v.Cmp(o) > 0
-}
